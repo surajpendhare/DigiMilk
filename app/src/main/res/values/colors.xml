@@ -7,10 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="blue">#0000FF</color>
-    <color name="status_blue">#13005A</color>
-    <color name="toolbar_blue">#00337C</color>
     <color name="lightBlue">#1C82AD</color>
+    <color name="appColor">#0a70bb</color>
+    <color name="statusColor">#1a6392</color>
 
 
 

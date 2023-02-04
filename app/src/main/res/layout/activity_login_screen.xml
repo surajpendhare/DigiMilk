@@ -1,34 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".LoginScreen">
 
     <!--text view for heading-->
-    <TextView
-        android:id="@+id/idTVHeader"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:gravity="center_horizontal"
-        android:padding="5dp"
-        android:text="Welcome to DigiMilk \n Login Form"
-        android:textAlignment="center"
-        android:textColor="@color/purple_700"
-        android:textSize="18sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/idTVHeader"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="Welcome to DigiMilk \n Login Form"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/purple_700"-->
+<!--        android:textSize="18sp" />-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/digimilk_icon"/>
 
     <!--edit text for user name-->
     <EditText
         android:id="@+id/idEdtUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/idTVHeader"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="10dp"
         android:hint="Enter UserName"
+        android:background="@drawable/border_style"
+        android:padding="10dp"
         android:inputType="textEmailAddress" />
 
     <!--edit text for user password-->
@@ -36,24 +43,25 @@
         android:id="@+id/idEdtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/idEdtUserName"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:hint="Enter Password"
+        android:background="@drawable/border_style"
+        android:padding="10dp"
         android:inputType="textPassword" />
 
-    <!--button to register our new user-->
     <Button
         android:id="@+id/idBtnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/idEdtPassword"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
         android:text="Login"
+        android:background="@drawable/button_style"
         android:textColor="@color/white"
-        android:textAllCaps="false" />
+        android:textAllCaps="true" />
 
-</RelativeLayout>
+</LinearLayout>

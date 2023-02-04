@@ -2,14 +2,13 @@
     <!-- Base application theme. -->
     <style name="Theme.DigiMilk" parent="Theme.MaterialComponents.Light.DarkActionBar">
 
-<!--        <item name="colorPrimary">@color/lightBlue</item>-->
-<!--        <item name="colorPrimaryVariant">@color/toolbar_blue</item>-->
-<!--        <item name="colorOnPrimary">@color/white</item>-->
+        <item name="colorPrimary">@color/appColor</item>
+        <item name="colorPrimaryVariant">@color/statusColor</item>
 
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+<!--        <item name="colorPrimary">@color/purple_200</item>-->
+<!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

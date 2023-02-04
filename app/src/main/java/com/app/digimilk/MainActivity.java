@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                     //DO something
                     break;
                 case R.id.idBtnDemandOrder:
-                    Toast.makeText(MainActivity.this, "Place demand Order", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Place Demand Order", Toast.LENGTH_SHORT).show();
                     //DO something
                     break;
                 case R.id.idBtnCollectionData:

@@ -7,17 +7,9 @@
     tools:context=".SplashScreen"
     android:background="#FFF">
 
-    <TextView
-        android:id="@+id/idTVHeading"
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:padding="10dp"
-        android:text="Splash Screen"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints" />
+        android:src="@drawable/digimilk_icon"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

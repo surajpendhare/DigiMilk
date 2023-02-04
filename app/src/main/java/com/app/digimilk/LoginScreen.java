@@ -43,7 +43,7 @@ public class LoginScreen extends AppCompatActivity {
                     editor.putString(USERNAME, userName);
                     editor.apply();
 
-                    Toast.makeText(LoginScreen.this, "username: "+userName+"\npassword: "+password, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginScreen.this, "Login Success", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(LoginScreen.this, MainActivity.class);
                     i.putExtra("username", userName);
                     startActivity(i);
