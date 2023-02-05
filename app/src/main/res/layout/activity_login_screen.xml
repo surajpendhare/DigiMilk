@@ -1,67 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".LoginScreen">
 
-    <!--text view for heading-->
-<!--    <TextView-->
-<!--        android:id="@+id/idTVHeader"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="30dp"-->
-<!--        android:gravity="center_horizontal"-->
-<!--        android:padding="5dp"-->
-<!--        android:text="Welcome to DigiMilk \n Login Form"-->
-<!--        android:textAlignment="center"-->
-<!--        android:textColor="@color/purple_700"-->
-<!--        android:textSize="18sp" />-->
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="200dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/digimilk_icon"/>
 
-    <!--edit text for user name-->
-    <EditText
-        android:id="@+id/idEdtUserName"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="10dp"
-        android:hint="Enter UserName"
-        android:background="@drawable/border_style"
-        android:padding="10dp"
-        android:inputType="textEmailAddress" />
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:background="@color/appColor"
+        android:layout_alignParentBottom="true">
 
-    <!--edit text for user password-->
-    <EditText
-        android:id="@+id/idEdtPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:hint="Enter Password"
-        android:background="@drawable/border_style"
-        android:padding="10dp"
-        android:inputType="textPassword" />
+        <TextView
+            android:id="@+id/idTVHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_margin="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
 
-    <Button
-        android:id="@+id/idBtnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/idEdtPassword"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="10dp"
-        android:text="Login"
-        android:background="@drawable/button_style"
-        android:textColor="@color/white"
-        android:textAllCaps="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:background="@drawable/login_view_background"
+            android:layout_alignParentBottom="true">
 
-</LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:endIconMode="clear_text"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                android:keyboardNavigationCluster="true"
+                app:endIconTint="@color/appColor">
+                <!--        app:shapeAppearance="@style/Rounded">-->
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idEdtUserName"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                app:passwordToggleEnabled="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                app:endIconTint="@color/appColor">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idEdtPassword"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/idBtnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtPassword"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="Login"
+                android:background="@drawable/button_style"
+                android:textColor="@color/white"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

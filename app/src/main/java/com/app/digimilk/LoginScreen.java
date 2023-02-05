@@ -8,20 +8,22 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.android.material.textfield.TextInputEditText;
 
 
 public class LoginScreen extends AppCompatActivity {
     private static final String SHARED_PREF_NAME = "mysharedpref";
     private static final String USERNAME = "username";
-    private EditText userNameEdt, passwordEdt;
+    private TextInputEditText userNameEdt, passwordEdt;
     private Button loginBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
+        getSupportActionBar().hide();
 
         userNameEdt = findViewById(R.id.idEdtUserName);
         passwordEdt = findViewById(R.id.idEdtPassword);
